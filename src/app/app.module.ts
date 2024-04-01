@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LandingPagePocariComponent } from './landing-page-pocari/landing-page-pocari.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingPagePocariComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,161 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #18a0d6;/*  Cyan background */
+    color: #000000; /* Dark cyan text */
+}
+
+nav {
+    background-color: #ffffff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 130px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #18a0d6;
+    font-family: 'Roboto', sans-serif; /* Change the font-family to Roboto */
+}
+
+nav a:hover {
+    background-color: rgba(24, 160, 214, 0.3);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+h2 {
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #ffffff; /* Dark cyan text */
+    font-style:normal;
+    font-size: 30 px; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center align the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.note {
+    color: red;
+    background-color: white; /* Tambahkan latar belakang putih */
+    padding: 10px; /* Tambahkan ruang di sekitar teks */
+    display: inline-block; /* Agar latar belakang mengikuti ukuran teks */
+    border-radius: 5px; /* Tambahkan sudut bulat pada latar belakang */
+    right: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+video {
+    width: 80%;
+    max-width: 800px;
+}
+
+.watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: rgba(173, 216, 230, 0.5); /* Cyan with alpha */
+    border-radius: 5px;
+}
+
+video {
+    width: 80%;
+    max-width: 900px;
+    border: 2px solid #008b8b; /* Dark cyan border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.logo-container {
+    width: 100px; /* Set width of the logo container */
+    height: 100px; /* Set height of the logo container */
+    border-radius: 50%; /* Make the container circular */
+    background-color: #ffffff; /* White background color for the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Add some space below the logo container */
+    position: absolute; /* Set positioning to absolute */
+    top: 20px; /* Align to the top */
+    left: 35px; /* Align to the right */
+}
+
+.logo {
+    width: 90px; /* Set width of the logo */
+    margin-bottom: 20px; /* Add some space below the logo */
+}
+
+/* CSS for Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 0, 0);
+}
+
+.modal-content {
+    background-color: #ef8686;
+    margin: 15% auto;
+    padding: 80px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    width: 80%;
+    text-align: center;
+}
+
+.alert-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
