@@ -5,13 +5,25 @@
 
 .container {
     height: 100vh;
+    background-image: url('/Frontend/App_Pocari_Sweat_Process/src/assets/photos/Pocari_LP.jpg');
 }
+
+.back {
+    font-family: 'Roboto', sans-serif;
+    color: #18a0d6;
+    background-color: rgb(255, 255, 255); /* Add a semi-transparent white background */
+    padding: 5px 10px; /* Add padding around the text */
+    border-radius: 5px; /* Add rounded corners */
+}
+
 
 body, html {
     margin: 0;
     padding: 0;
-    background-color: rgb(52, 140, 212); /* Transparent cyan background */
+    background-color: rgba(52, 140, 212); /* Transparent cyan background */
     color: #000000; /* Dark cyan text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    border-radius: 10%;
 }
 
 
@@ -21,7 +33,8 @@ nav {
 }
 
 nav ul {
-    width: 100%;
+    width: 50%;
+    height: 5%;
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -39,12 +52,14 @@ nav a {
     display: flex;
     align-items: center;
     color: #18a0d6;
-    font-family: 'Roboto', sans-serif; /* Change the font-family to Roboto */
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 1.0s ease; /* Add transition for background-color */
 }
 
 nav a:hover {
-    background-color: rgba(24, 160, 214, 0.3);
+    background-color: rgba(24, 160, 214, 0.5s);
 }
+
 
 nav li:first-child {
     margin-right: auto;
@@ -119,9 +134,15 @@ video {
     right: 50px; /* Align to the right */
 }
 
-.logo {
+.logo_AIO {
+    right: 50px;
     width: 165px; /* Set width of the logo */
     margin-bottom: 20px; /* Add some space below the logo */
+}
+
+.logo_Pocari {
+    width: 165px; /* Set width of the logo */
+    margin-bottom: 20px; 
 }
 
 /* CSS for Modal */

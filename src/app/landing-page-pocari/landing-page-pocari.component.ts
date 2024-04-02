@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-landing-page-pocari',
   templateUrl: './landing-page-pocari.component.html',
   styleUrls: ['./landing-page-pocari.component.css']
 })
-export class LandingPagePocariComponent {
+export class LandingPagePocariComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
     videoPlayer:any = document.getElementById('videoPlayer');
 
@@ -17,7 +20,9 @@ export class LandingPagePocariComponent {
   closemodal() {
     var modal = document.getElementById("myModal");
     modal!.style.display = "none";
-    this.videoPlayer!.play();
+    if (this.videoPlayer) {
+      this.videoPlayer!.play();
+    }
   }
 
  span = document.getElementsByClassName("close")[0];
