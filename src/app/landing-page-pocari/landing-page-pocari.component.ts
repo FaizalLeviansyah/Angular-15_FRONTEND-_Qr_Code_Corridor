@@ -35,11 +35,13 @@ export class LandingPagePocariComponent implements OnInit {
     if (event.ctrlKey && (event.key === 'c' || event.key === 'u' || event.key === 'i' || event.key === 'j' || event.key === 'k' || event.key === 's' || event.key === 'x' || event.key === 'q')) {
       event.preventDefault();
       this.openmodal();
+      alert('Dilarang mengambil screenshot dari halaman ini!!');
   }
 }
 
   eventkeyup (event:any) {
     this.openmodal();
+    alert('Dilarang mengambil screenshot dari halaman ini!!');
       this.videoPlayer.pause();
     navigator.clipboard.writeText('');
   }
