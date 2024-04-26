@@ -1,34 +1,50 @@
 <body (keydown)="eventkeydown($event)" (resize)="resizealert()" (keyup)="eventkeyup($event)">
-    <nav>
-        <ul>
-            <div class="logo-container">
-                <img src="assets\photos\AIO-BRAND-Pocari-Sweat-Logo" alt="pocari" class="logo_Pocari">
-                <img src="assets\photos\(NEW)_LOGO_AIO_01.png" alt="Otsuka Logo" class="logo_AIO">
-            </div>
-            <!-- <li> <a href="#"><b>Home-Page</b></a></li> -->
-            <li> <a href="#"><h2 class="back">PROSES PEMBUATAN POCARI SWEAT</h2></a></li>
-        </ul>
-      </nav>
-      <div class="container"><br><br>
-        
-        <video controls id="videoPlayer" controlsList="nodownload" disablePictureInPicture playsinline>
-            <source src="assets/videos/Proses Produksi Pocari Sweat.mp4" type="video/mp4">
-            <!-- English subtitle track -->
-            <track kind="subtitles" src="/subtitles/english_subtitle.vtt" srclang="en" label="English">
-        </video>
-        
-        <div class="watermark">PT Amerta Indah Otsuka Property</div> <br>
-        <!--<p class="note"><b>Peringatan : Screenshot Dilarang!!</b></p> <br>-->
-        <!--<button onclick="goToVideo()">Watch Video</button>-->
-      </div> 
-      
-      <!-- Modal -->
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" (click)="closemodal()">&times;</span>
-            <h1 class="alert-text">Dilarang mengambil screenshot dari halaman ini!!</h1>
+  <nav>
+    <ul>
+        <div class="logo-container">
+            <img src="/Frontend/App_Pocari_Sweat_Process/src/assets/photos/(NEW)_LOGO_AIO-01.png" alt="Otsuka Logo" class="logo">
         </div>
-      </div>
+        <!--<li><a href="#"><b><h2 class="back">PROSES PEMBUATAN POCARI SWEAT</h2></b></a></li>-->
+        <li><a href="#"><b></b></a></li>
+    </ul>
+</nav>
+<!-- Your HTML code -->
+<div class="container">
+<div class="wrapper">
+    <br> <br> <br> <p class="h11 text-center"><b>PROSES PEMBUATAN POCARI SWEAT</b></p>  <br>
+<p class="pp text-center">GO SWEAT GO ION</p> <br> <br>
+<video controls id="videoPlayer" controlsList="nodownload" disablePictureInPicture playsinline>
+    <source src="" type="video/mp4" id="videoSource"> <!-- Empty src attribute to be filled by JavaScript -->
+    <!-- English subtitle track -->
+    <track kind="subtitles" src="/subtitles/english_subtitle.vtt" srclang="en" label="English">
+</video>    
+<!-- <div class="watermark">PT Amerta Indah Otsuka Property</div> <br> -->
+</div> 
+</div>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="alert-text">Dilarang mengambil screenshot di halaman ini!!</h1>
+    </div>
+</div>
+
+<div class="half-background"></div>
+<div class="content">
+    <footer>
+        <div class="left-section">
+            <span>&copy; 2024 PT Amerta Indah Otsuka</span>
+        </div>
+        <div class="right-section">
+            <a href="https://twitter.com/otsuka_id"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1"/></a>
+            <a href="https://www.instagram.com/otsuka.id/"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/instagram-new.png" alt="instagram-new"/></a>
+            <a href="https://www.linkedin.com/company/pt-amerta-indah-otsuka"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/linkedin.png" alt="linkedin"/></a>
+        </div>
+    </footer>
+</div>
 </body>
 
-    
+
+
