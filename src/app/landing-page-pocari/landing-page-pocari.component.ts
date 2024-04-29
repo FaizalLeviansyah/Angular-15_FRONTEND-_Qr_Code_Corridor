@@ -9,7 +9,6 @@ export class LandingPagePocariComponent implements OnInit {
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
-
     videoPlayer:any = document.getElementById('videoPlayer');
 
   openmodal() {
@@ -25,8 +24,7 @@ export class LandingPagePocariComponent implements OnInit {
     }
   }
 
- span = document.getElementsByClassName("close")[0];
-
+span = document.getElementsByClassName("close")[0];
   onclickpause () {
     this.closemodal();
   }
@@ -53,7 +51,7 @@ export class LandingPagePocariComponent implements OnInit {
 
   gotovideo () {
     //Redirect to the video page
-    window.location.href = "src/assets/videos/Proses Produksi Pocari Sweat.mp4";
+    window.location.href = "src/assets/videos/Proses_Produksi_Pocari_Sweat.mp4";
   }
 
     

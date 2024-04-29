@@ -1,49 +1,51 @@
 <body (keydown)="eventkeydown($event)" (resize)="resizealert()" (keyup)="eventkeyup($event)">
-  <nav>
-    <ul>
-        <div class="logo-container">
-            <img src="/Frontend/App_Pocari_Sweat_Process/src/assets/photos/(NEW)_LOGO_AIO-01.png" alt="Otsuka Logo" class="logo">
-        </div>
-        <!--<li><a href="#"><b><h2 class="back">PROSES PEMBUATAN POCARI SWEAT</h2></b></a></li>-->
-        <li><a href="#"><b></b></a></li>
-    </ul>
-</nav>
-<!-- Your HTML code -->
-<div class="container">
-<div class="wrapper">
-    <br> <br> <br> <p class="h11 text-center"><b>PROSES PEMBUATAN POCARI SWEAT</b></p>  <br>
-<p class="pp text-center">GO SWEAT GO ION</p> <br> <br>
-<video controls id="videoPlayer" controlsList="nodownload" disablePictureInPicture playsinline>
-    <source src="" type="video/mp4" id="videoSource"> <!-- Empty src attribute to be filled by JavaScript -->
-    <!-- English subtitle track -->
-    <track kind="subtitles" src="/subtitles/english_subtitle.vtt" srclang="en" label="English">
-</video>    
-<!-- <div class="watermark">PT Amerta Indah Otsuka Property</div> <br> -->
-</div> 
-</div>
-
-
-<!-- Modal -->
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h1 class="alert-text">Dilarang mengambil screenshot di halaman ini!!</h1>
+ <div id="myModal" #modal class="modal">
+    <nav>
+        <ul>
+            <div class="logo-container">
+                <img src="/Frontend/App_Pocari_Sweat_Process/src/assets/photos/(NEW)_LOGO_AIO-01.png" alt="Otsuka Logo" class="logo">
+            </div>
+            <!--<li><a href="#"><b><h2 class="back">PROSES PEMBUATAN POCARI SWEAT</h2></b></a></li>-->
+            <li><a href="#"><b></b></a></li>
+        </ul>
+    </nav>
+    <!-- Your HTML code -->
+    <div class="container">
+    <div class="wrapper">
+        <br> <br> <br> <p class="h11 text-center"><b>PROSES PEMBUATAN POCARI SWEAT</b></p>  <br>
+    <p class="pp text-center">GO SWEAT GO ION</p> <br> <br>
+    <video controls id="videoPlayer" controlsList="nodownload" disablePictureInPicture playsinline>
+        <source src="" type="video/mp4" id="videoSource"> <!-- Empty src attribute to be filled by JavaScript -->
+        <!-- English subtitle track -->
+        <track kind="subtitles" src="/subtitles/english_subtitle.vtt" srclang="en" label="English">
+    </video>    
+    <!-- <div class="watermark">PT Amerta Indah Otsuka Property</div> <br> -->
+    </div> 
     </div>
-</div>
-
-<div class="half-background"></div>
-<div class="content">
-    <footer>
-        <div class="left-section">
-            <span>&copy; 2024 PT Amerta Indah Otsuka</span>
+    
+    
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1 class="alert-text">Dilarang mengambil screenshot di halaman ini!!</h1>
         </div>
-        <div class="right-section">
-            <a href="https://twitter.com/otsuka_id"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1"/></a>
-            <a href="https://www.instagram.com/otsuka.id/"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/instagram-new.png" alt="instagram-new"/></a>
-            <a href="https://www.linkedin.com/company/pt-amerta-indah-otsuka"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/linkedin.png" alt="linkedin"/></a>
-        </div>
-    </footer>
-</div>
+    </div>
+    
+    <div class="half-background"></div>
+    <div class="content">
+        <footer>
+            <div class="left-section">
+                <span>&copy; 2024 PT Amerta Indah Otsuka</span>
+            </div>
+            <div class="right-section">
+                <a href="https://twitter.com/otsuka_id"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1"/></a>
+                <a href="https://www.instagram.com/otsuka.id/"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/instagram-new.png" alt="instagram-new"/></a>
+                <a href="https://www.linkedin.com/company/pt-amerta-indah-otsuka"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/linkedin.png" alt="linkedin"/></a>
+            </div>
+        </footer>
+    </div>
+ </div>
 </body>
 
 
