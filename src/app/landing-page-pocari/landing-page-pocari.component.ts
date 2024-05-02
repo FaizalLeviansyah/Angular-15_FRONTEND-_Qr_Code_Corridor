@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './landing-page-pocari.component.html',
   styleUrls: ['./landing-page-pocari.component.css']
 })
+
+// implement Oninit
 export class LandingPagePocariComponent {
 //   ngOnInit(): void {
 //   }
