@@ -8,8 +8,8 @@
     font-family: 'Poppins', sans-serif;
   }
   
-  body {
-    background: url("/frontend/assets/img/pocari_seger.jpg");
+ .wrapbg {
+    background: url("/assets/photos/pocari_seger.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,6 @@
     box-shadow: 0 0 50px #0ef;
     border-radius: 20px;
     padding: 40px;
-    
     overflow: hidden;
   }
   

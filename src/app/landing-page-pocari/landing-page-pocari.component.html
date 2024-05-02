@@ -1,30 +1,26 @@
-<body (keydown)="eventkeydown($event)" (resize)="resizealert()" (keyup)="eventkeyup($event)">
- <div id="myModal" #modal class="modal">
+<!-- <div (keydown)="eventkeydown($event)" (resize)="resizealert()" (keyup)="eventkeyup($event)"> -->
+<!-- <div id="myModal" #modal class="modal"> -->
     <nav>
         <ul>
             <div class="logo-container">
-                <img src="/Frontend/App_Pocari_Sweat_Process/src/assets/photos/(NEW)_LOGO_AIO-01.png" alt="Otsuka Logo" class="logo">
+                <img src="../../assets/photos/(NEW)_LOGO_AIO-01.png" alt="Otsuka Logo" class="logo">
             </div>
-            <!--<li><a href="#"><b><h2 class="back">PROSES PEMBUATAN POCARI SWEAT</h2></b></a></li>-->
+            <li><a href="/app/admin-login-page-pocari/admin-login-page-pocari.component.css"><b><h2 class="back">Login</h2></b></a></li>
             <li><a href="#"><b></b></a></li>
         </ul>
     </nav>
-    <!-- Your HTML code -->
     <div class="container">
     <div class="wrapper">
         <br> <br> <br> <p class="h11 text-center"><b>PROSES PEMBUATAN POCARI SWEAT</b></p>  <br>
     <p class="pp text-center">GO SWEAT GO ION</p> <br> <br>
     <video controls id="videoPlayer" controlsList="nodownload" disablePictureInPicture playsinline>
-        <source src="" type="video/mp4" id="videoSource"> <!-- Empty src attribute to be filled by JavaScript -->
-        <!-- English subtitle track -->
+        <source src="" type="video/mp4" id="videoSource">
+
         <track kind="subtitles" src="/subtitles/english_subtitle.vtt" srclang="en" label="English">
     </video>    
-    <!-- <div class="watermark">PT Amerta Indah Otsuka Property</div> <br> -->
     </div> 
     </div>
-    
-    
-    <!-- Modal -->
+
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -45,8 +41,8 @@
             </div>
         </footer>
     </div>
- </div>
-</body>
+<!-- </div> -->
+<!-- </div> -->
 
 
 
