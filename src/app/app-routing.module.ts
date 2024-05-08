@@ -8,8 +8,8 @@ const routes: Routes = [
   // Definisikan jalur langsung ke komponen landing page
   { path: '', component: LandingPagePocariComponent },
   // Anda juga bisa menambahkan jalur-jalur lainnya di sini jika diperlukan
-  { path: 'loginAdmin', component: AdminLoginPagePocariComponent},
-  { path: 'dashboardAdmin', component: AdminDashboardPagePocariComponent}
+  { path: 'admin-login', component: AdminLoginPagePocariComponent},
+  { path: 'admin-dashboard', component: AdminDashboardPagePocariComponent}
 ];
 
 @NgModule({
